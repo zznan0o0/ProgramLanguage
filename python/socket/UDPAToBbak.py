@@ -85,7 +85,7 @@ s = socket.socket(socket.AF_INET,
                       socket.IPPROTO_RAW)
  
 fakesrc = "10.1.1.1"
-dst = "175.155.234.155"
+dst = "0.0.0.0"
 dstport = 1900
 payload = "UDP fake packet test"
 # packobj = UDP(fakesrc, dst, payload)
