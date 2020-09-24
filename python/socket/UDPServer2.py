@@ -10,4 +10,5 @@ while True:
  
     server.sendto(data.upper(),client_addr)
 
+
 # server.close()
