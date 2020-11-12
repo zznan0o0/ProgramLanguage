@@ -1,0 +1,22 @@
+#服务名称
+spring:
+  application:
+    name: springbootService
+server:
+  port: 6001
+
+#注册中心发现---把自己当作一个服务，注册到集群中的其他注册中心
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:5000/eureka/
+    #是否需要本服务注册到eureka
+    register-with-eureka: true
+    #是否需要从eureka获取注册信息
+    fetch-registry: true
+  #=======高可用作为客户端的配置
+  #心跳机制
+  instance:
+    lease-renewal-interval-in-seconds: 5
+    #扫描失效文件
+    lease-expiration-duration-in-seconds: 10
