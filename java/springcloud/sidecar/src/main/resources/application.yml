@@ -1,0 +1,19 @@
+server:
+  port: 8028
+
+spring:
+  application:
+    name: springbootService
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:5000/eureka/
+  instance:
+    prefer-ip-address: true
+
+sidecar:
+  hostname: 192.168.10.52
+  ip-address: 192.168.10.52
+  port: 82                                               # Node.js微服务的端口
+  health-uri: http://192.168.10.52:82/health                 # Node.js微服务的健康检查URL

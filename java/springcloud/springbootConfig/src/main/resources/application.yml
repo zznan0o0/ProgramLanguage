@@ -1,0 +1,23 @@
+server:
+  port: 6002
+spring:
+  application:
+    name: springbootConfig
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://192.168.2.177/zzn/springcloudtest.git
+          username: zzn
+          password: 123123123
+          label: master
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:5000/eureka/
+  instance:
+    preferIpAddress: true
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+    lease-expiration-duration-in-seconds: 30
+    lease-renewal-interval-in-seconds: 30

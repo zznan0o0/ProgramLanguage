@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.cloud</groupId>
+    <artifactId>cloud-parent</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+    <repositories>
+        <repository>
+            <id>maven-ali</id>
+            <url>http://maven.aliyun.com/nexus/content/groups/public//</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+                <checksumPolicy>fail</checksumPolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>public</id>
+            <name>aliyun nexus</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <modules>
+        <module>sidecar</module>
+        <module>springbootConfig</module>
+        <module>springbootEureka</module>
+<!--        <module>springbootZuul</module>-->
+<!--        <module>springbootService</module>-->
+<!--        <module>springbootService2</module>-->
+    </modules>
+
+    <name>微服务平台</name>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.3.5.RELEASE</version>
+
+    </parent>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+
+        <spring-cloud.version>Hoxton.SR8</spring-cloud.version>
+        <starter-parent.version>2.3.5.RELEASE</starter-parent.version>
+        <starter-netflix-zuul.version>2.2.6.RELEASE</starter-netflix-zuul.version>
+        <starter-netflix-hystrix.version>2.2.6.RELEASE</starter-netflix-hystrix.version>
+        <netflix-sidecar.version>2.2.5.RELEASE</netflix-sidecar.version>
+        <servo-core.version>0.13.0</servo-core.version>
+        <config-server.version>2.2.6.RELEASE</config-server.version>
+        <starter-config.version>2.2.6.RELEASE</starter-config.version>
+        <starter-netflix-eureka-server.version>2.2.6.RELEASE</starter-netflix-eureka-server.version>
+        <starter-netflix-eureka-client.version>2.2.6.RELEASE</starter-netflix-eureka-client.version>
+        <starter-web.version>2.3.5.RELEASE</starter-web.version>
+        <commons-lang3.version>3.11</commons-lang3.version>
+        <fastjson.version>1.2.75</fastjson.version>
+        <jackson-module-jaxb-annotations.version>2.11.3</jackson-module-jaxb-annotations.version>
+        <starter-actuator.version>2.3.5.RELEASE</starter-actuator.version>
+
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <version>2.3.5.RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <!--                <version>2.2.2.RELEASE</version>-->
+            </plugin>
+        </plugins>
+    </build>
+
+
+
+</project>
