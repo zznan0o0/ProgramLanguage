@@ -8,4 +8,4 @@ target/
 *.exe
 *.class
 
-# __pycache__
+__pycache__
