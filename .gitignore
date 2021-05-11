@@ -7,5 +7,6 @@ target/
 *.iml
 *.exe
 *.class
-
+build
+*.so
 __pycache__
