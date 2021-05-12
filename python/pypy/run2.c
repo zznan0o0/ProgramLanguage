@@ -1134,41 +1134,147 @@ static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
 
 /* Module declarations from 'run2' */
-static long __pyx_v_4run2_number;
-static long __pyx_v_4run2_i;
 #define __Pyx_MODULE_NAME "run2"
 extern int __pyx_module_is_main_run2;
 int __pyx_module_is_main_run2 = 0;
 
 /* Implementation of 'run2' */
 static PyObject *__pyx_builtin_range;
+static const char __pyx_k_i[] = "i";
 static const char __pyx_k_s[] = " s";
 static const char __pyx_k_end[] = "end";
 static const char __pyx_k_file[] = "file";
 static const char __pyx_k_main[] = "__main__";
 static const char __pyx_k_name[] = "__name__";
+static const char __pyx_k_run2[] = "run2";
 static const char __pyx_k_test[] = "__test__";
 static const char __pyx_k_time[] = "time";
 static const char __pyx_k_print[] = "print";
 static const char __pyx_k_range[] = "range";
 static const char __pyx_k_start[] = "start";
+static const char __pyx_k_addnum[] = "addnum";
 static const char __pyx_k_import[] = "__import__";
+static const char __pyx_k_number[] = "number";
+static const char __pyx_k_run2_pyx[] = "run2.pyx";
+static const char __pyx_k_range_num[] = "range_num";
 static const char __pyx_k_Ellapsed_time[] = "Ellapsed time: ";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
 static PyObject *__pyx_kp_u_Ellapsed_time;
+static PyObject *__pyx_n_s_addnum;
 static PyObject *__pyx_n_s_cline_in_traceback;
 static PyObject *__pyx_n_s_end;
 static PyObject *__pyx_n_s_file;
+static PyObject *__pyx_n_s_i;
 static PyObject *__pyx_n_s_import;
 static PyObject *__pyx_n_s_main;
 static PyObject *__pyx_n_s_name;
+static PyObject *__pyx_n_s_number;
 static PyObject *__pyx_n_s_print;
 static PyObject *__pyx_n_s_range;
+static PyObject *__pyx_n_s_range_num;
+static PyObject *__pyx_n_s_run2;
+static PyObject *__pyx_kp_s_run2_pyx;
 static PyObject *__pyx_kp_u_s;
 static PyObject *__pyx_n_s_start;
 static PyObject *__pyx_n_s_test;
 static PyObject *__pyx_n_s_time;
+static PyObject *__pyx_pf_4run2_addnum(CYTHON_UNUSED PyObject *__pyx_self, long __pyx_v_range_num); /* proto */
+static PyObject *__pyx_int_100000000;
+static PyObject *__pyx_tuple_;
+static PyObject *__pyx_tuple__3;
+static PyObject *__pyx_codeobj__2;
 /* Late includes */
+
+/* "run2.pyx":7
+ * 
+ * 
+ * def addnum(long range_num):             # <<<<<<<<<<<<<<
+ *     cdef long number = 0
+ *     cdef long i
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_4run2_1addnum(PyObject *__pyx_self, PyObject *__pyx_arg_range_num); /*proto*/
+static PyMethodDef __pyx_mdef_4run2_1addnum = {"addnum", (PyCFunction)__pyx_pw_4run2_1addnum, METH_O, 0};
+static PyObject *__pyx_pw_4run2_1addnum(PyObject *__pyx_self, PyObject *__pyx_arg_range_num) {
+  long __pyx_v_range_num;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("addnum (wrapper)", 0);
+  assert(__pyx_arg_range_num); {
+    __pyx_v_range_num = __Pyx_PyInt_As_long(__pyx_arg_range_num); if (unlikely((__pyx_v_range_num == (long)-1) && PyErr_Occurred())) __PYX_ERR(0, 7, __pyx_L3_error)
+  }
+  goto __pyx_L4_argument_unpacking_done;
+  __pyx_L3_error:;
+  __Pyx_AddTraceback("run2.addnum", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_RefNannyFinishContext();
+  return NULL;
+  __pyx_L4_argument_unpacking_done:;
+  __pyx_r = __pyx_pf_4run2_addnum(__pyx_self, ((long)__pyx_v_range_num));
+
+  /* function exit code */
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_4run2_addnum(CYTHON_UNUSED PyObject *__pyx_self, long __pyx_v_range_num) {
+  long __pyx_v_number;
+  long __pyx_v_i;
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  long __pyx_t_1;
+  long __pyx_t_2;
+  long __pyx_t_3;
+  __Pyx_RefNannySetupContext("addnum", 0);
+
+  /* "run2.pyx":8
+ * 
+ * def addnum(long range_num):
+ *     cdef long number = 0             # <<<<<<<<<<<<<<
+ *     cdef long i
+ *     for i in range(range_num):
+ */
+  __pyx_v_number = 0;
+
+  /* "run2.pyx":10
+ *     cdef long number = 0
+ *     cdef long i
+ *     for i in range(range_num):             # <<<<<<<<<<<<<<
+ *         number += i
+ * 
+ */
+  __pyx_t_1 = __pyx_v_range_num;
+  __pyx_t_2 = __pyx_t_1;
+  for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
+    __pyx_v_i = __pyx_t_3;
+
+    /* "run2.pyx":11
+ *     cdef long i
+ *     for i in range(range_num):
+ *         number += i             # <<<<<<<<<<<<<<
+ * 
+ * addnum(100000000)
+ */
+    __pyx_v_number = (__pyx_v_number + __pyx_v_i);
+  }
+
+  /* "run2.pyx":7
+ * 
+ * 
+ * def addnum(long range_num):             # <<<<<<<<<<<<<<
+ *     cdef long number = 0
+ *     cdef long i
+ */
+
+  /* function exit code */
+  __pyx_r = Py_None; __Pyx_INCREF(Py_None);
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
 
 static PyMethodDef __pyx_methods[] = {
   {0, 0, 0, 0}
@@ -1217,14 +1323,20 @@ static struct PyModuleDef __pyx_moduledef = {
 
 static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_u_Ellapsed_time, __pyx_k_Ellapsed_time, sizeof(__pyx_k_Ellapsed_time), 0, 1, 0, 0},
+  {&__pyx_n_s_addnum, __pyx_k_addnum, sizeof(__pyx_k_addnum), 0, 0, 1, 1},
   {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
   {&__pyx_n_s_end, __pyx_k_end, sizeof(__pyx_k_end), 0, 0, 1, 1},
   {&__pyx_n_s_file, __pyx_k_file, sizeof(__pyx_k_file), 0, 0, 1, 1},
+  {&__pyx_n_s_i, __pyx_k_i, sizeof(__pyx_k_i), 0, 0, 1, 1},
   {&__pyx_n_s_import, __pyx_k_import, sizeof(__pyx_k_import), 0, 0, 1, 1},
   {&__pyx_n_s_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 0, 1, 1},
   {&__pyx_n_s_name, __pyx_k_name, sizeof(__pyx_k_name), 0, 0, 1, 1},
+  {&__pyx_n_s_number, __pyx_k_number, sizeof(__pyx_k_number), 0, 0, 1, 1},
   {&__pyx_n_s_print, __pyx_k_print, sizeof(__pyx_k_print), 0, 0, 1, 1},
   {&__pyx_n_s_range, __pyx_k_range, sizeof(__pyx_k_range), 0, 0, 1, 1},
+  {&__pyx_n_s_range_num, __pyx_k_range_num, sizeof(__pyx_k_range_num), 0, 0, 1, 1},
+  {&__pyx_n_s_run2, __pyx_k_run2, sizeof(__pyx_k_run2), 0, 0, 1, 1},
+  {&__pyx_kp_s_run2_pyx, __pyx_k_run2_pyx, sizeof(__pyx_k_run2_pyx), 0, 0, 1, 0},
   {&__pyx_kp_u_s, __pyx_k_s, sizeof(__pyx_k_s), 0, 1, 0, 0},
   {&__pyx_n_s_start, __pyx_k_start, sizeof(__pyx_k_start), 0, 0, 1, 1},
   {&__pyx_n_s_test, __pyx_k_test, sizeof(__pyx_k_test), 0, 0, 1, 1},
@@ -1232,7 +1344,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {0, 0, 0, 0, 0, 0, 0}
 };
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 7, __pyx_L1_error)
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 10, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -1241,12 +1353,39 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
 static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
+
+  /* "run2.pyx":7
+ * 
+ * 
+ * def addnum(long range_num):             # <<<<<<<<<<<<<<
+ *     cdef long number = 0
+ *     cdef long i
+ */
+  __pyx_tuple_ = PyTuple_Pack(4, __pyx_n_s_range_num, __pyx_n_s_range_num, __pyx_n_s_number, __pyx_n_s_i); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 7, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple_);
+  __Pyx_GIVEREF(__pyx_tuple_);
+  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(1, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_run2_pyx, __pyx_n_s_addnum, 7, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 7, __pyx_L1_error)
+
+  /* "run2.pyx":13
+ *         number += i
+ * 
+ * addnum(100000000)             # <<<<<<<<<<<<<<
+ * 
+ * print(f"Ellapsed time: {time.time() - start} s")
+ */
+  __pyx_tuple__3 = PyTuple_Pack(1, __pyx_int_100000000); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 13, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__3);
+  __Pyx_GIVEREF(__pyx_tuple__3);
   __Pyx_RefNannyFinishContext();
   return 0;
+  __pyx_L1_error:;
+  __Pyx_RefNannyFinishContext();
+  return -1;
 }
 
 static CYTHON_SMALL_CODE int __Pyx_InitGlobals(void) {
   if (__Pyx_InitStrings(__pyx_string_tab) < 0) __PYX_ERR(0, 1, __pyx_L1_error);
+  __pyx_int_100000000 = PyInt_FromLong(100000000L); if (unlikely(!__pyx_int_100000000)) __PYX_ERR(0, 1, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -1412,11 +1551,10 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec_run2(PyObject *__pyx_pyinit_module
 {
   PyObject *__pyx_t_1 = NULL;
   PyObject *__pyx_t_2 = NULL;
-  long __pyx_t_3;
-  Py_ssize_t __pyx_t_4;
-  Py_UCS4 __pyx_t_5;
+  Py_ssize_t __pyx_t_3;
+  Py_UCS4 __pyx_t_4;
+  PyObject *__pyx_t_5 = NULL;
   PyObject *__pyx_t_6 = NULL;
-  PyObject *__pyx_t_7 = NULL;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -1538,8 +1676,8 @@ if (!__Pyx_RefNanny) {
  * import time
  * 
  * start = time.time()             # <<<<<<<<<<<<<<
- * cdef long number = 0
- * cdef long i
+ * 
+ * 
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_time); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -1552,100 +1690,86 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_start, __pyx_t_1) < 0) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "run2.pyx":4
- * 
- * start = time.time()
- * cdef long number = 0             # <<<<<<<<<<<<<<
- * cdef long i
- * 
- */
-  __pyx_v_4run2_number = 0;
-
   /* "run2.pyx":7
- * cdef long i
  * 
- * for i in range(100000000):             # <<<<<<<<<<<<<<
- *     number += i
  * 
+ * def addnum(long range_num):             # <<<<<<<<<<<<<<
+ *     cdef long number = 0
+ *     cdef long i
  */
-  for (__pyx_t_3 = 0; __pyx_t_3 < 0x5F5E100; __pyx_t_3+=1) {
-    __pyx_v_4run2_i = __pyx_t_3;
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_4run2_1addnum, NULL, __pyx_n_s_run2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_addnum, __pyx_t_1) < 0) __PYX_ERR(0, 7, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "run2.pyx":8
+  /* "run2.pyx":13
+ *         number += i
  * 
- * for i in range(100000000):
- *     number += i             # <<<<<<<<<<<<<<
+ * addnum(100000000)             # <<<<<<<<<<<<<<
  * 
  * print(f"Ellapsed time: {time.time() - start} s")
  */
-    __pyx_v_4run2_number = (__pyx_v_4run2_number + __pyx_v_4run2_i);
-  }
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_addnum); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__3, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "run2.pyx":10
- *     number += i
+  /* "run2.pyx":15
+ * addnum(100000000)
  * 
  * print(f"Ellapsed time: {time.time() - start} s")             # <<<<<<<<<<<<<<
- * print(number)
  */
-  __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_4 = 0;
-  __pyx_t_5 = 127;
+  __pyx_t_2 = PyTuple_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 15, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = 0;
+  __pyx_t_4 = 127;
   __Pyx_INCREF(__pyx_kp_u_Ellapsed_time);
-  __pyx_t_4 += 15;
+  __pyx_t_3 += 15;
   __Pyx_GIVEREF(__pyx_kp_u_Ellapsed_time);
-  PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_kp_u_Ellapsed_time);
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_time); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 10, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_time); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 10, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_6);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 10, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_start); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 10, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_7 = PyNumber_Subtract(__pyx_t_2, __pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 10, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_7);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = __Pyx_PyObject_FormatSimple(__pyx_t_7, __pyx_empty_unicode); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 10, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_6);
-  __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_5 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_6) > __pyx_t_5) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_6) : __pyx_t_5;
-  __pyx_t_4 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_6);
-  __Pyx_GIVEREF(__pyx_t_6);
-  PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_t_6);
-  __pyx_t_6 = 0;
-  __Pyx_INCREF(__pyx_kp_u_s);
-  __pyx_t_4 += 2;
-  __Pyx_GIVEREF(__pyx_kp_u_s);
-  PyTuple_SET_ITEM(__pyx_t_1, 2, __pyx_kp_u_s);
-  __pyx_t_6 = __Pyx_PyUnicode_Join(__pyx_t_1, 3, __pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 10, __pyx_L1_error)
+  PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_kp_u_Ellapsed_time);
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_time); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 15, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_time); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 15, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 15, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_start); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 15, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_6 = PyNumber_Subtract(__pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (__Pyx_PrintOne(0, __pyx_t_6) < 0) __PYX_ERR(0, 10, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_t_5 = __Pyx_PyObject_FormatSimple(__pyx_t_6, __pyx_empty_unicode); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 15, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-
-  /* "run2.pyx":11
- * 
- * print(f"Ellapsed time: {time.time() - start} s")
- * print(number)             # <<<<<<<<<<<<<<
- */
-  __pyx_t_6 = __Pyx_PyInt_From_long(__pyx_v_4run2_number); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 11, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_6);
-  if (__Pyx_PrintOne(0, __pyx_t_6) < 0) __PYX_ERR(0, 11, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+  __pyx_t_4 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_5) > __pyx_t_4) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_5) : __pyx_t_4;
+  __pyx_t_3 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_5);
+  __Pyx_GIVEREF(__pyx_t_5);
+  PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_5);
+  __pyx_t_5 = 0;
+  __Pyx_INCREF(__pyx_kp_u_s);
+  __pyx_t_3 += 2;
+  __Pyx_GIVEREF(__pyx_kp_u_s);
+  PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_kp_u_s);
+  __pyx_t_5 = __Pyx_PyUnicode_Join(__pyx_t_2, 3, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 15, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (__Pyx_PrintOne(0, __pyx_t_5) < 0) __PYX_ERR(0, 15, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "run2.pyx":1
  * import time             # <<<<<<<<<<<<<<
  * 
  * start = time.time()
  */
-  __pyx_t_6 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_6) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+  __pyx_t_5 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_5) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /*--- Wrapped vars code ---*/
 
@@ -1653,8 +1777,8 @@ if (!__Pyx_RefNanny) {
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
-  __Pyx_XDECREF(__pyx_t_7);
   if (__pyx_m) {
     if (__pyx_d) {
       __Pyx_AddTraceback("init run2", __pyx_clineno, __pyx_lineno, __pyx_filename);

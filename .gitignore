@@ -9,4 +9,5 @@ target/
 *.class
 build
 *.so
+*.out
 __pycache__
