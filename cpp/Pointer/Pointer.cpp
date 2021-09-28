@@ -11,6 +11,10 @@ int main(){
 	a = 3;
 	cout << c << endl;
 
+	// cout << *a << endl;
+	cout << &a << endl;
+	cout << *&a << endl;
+
 
 	return 0;
 }
