@@ -12,3 +12,4 @@ build
 *.out
 __pycache__
 *.kexe
+**/node_modules

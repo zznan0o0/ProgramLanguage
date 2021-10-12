@@ -33,7 +33,11 @@ class Decimal {
 
     //float
     const maxFloatLength = Math.max(floatArr.length, this.floatArr.length);
-    if(floatArr.length)
+    if(floatArr.length < maxFloatLength){
+      for(let i = 0; i < maxFloatLength - floatArr.length; i++){
+        
+      }
+    }
 
     for(let i = maxFloatLength - 1; i >= 0; i--){
 
